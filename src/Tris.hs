@@ -1,13 +1,13 @@
 {-# LANGUAGE UnicodeSyntax #-}
 {-|
 Module      : Tris
-Description : a command line TicTacToe game
+Description : a library with TicTacToe types and functions
 Copyright   : (c) Alberto Comin, 2017
 License     : GPL-3
 Maintainer  : albeko@gmail.com
 Stability   : experimental
 
-Tris is a text-base TicTacToe game.
+Tris is a text-based TicTacToe game.
 To start a game use the function 'startGame' with the
 algorithm to use (e.g. "startGame alphabeta").
 There are two implemented algorithms: 'negamax', which does
@@ -303,6 +303,6 @@ finishGame :: Board -> IO ()
 finishGame brd = case checkGameStatus brd of
   GameDraw   -> putStrLn "Game even!"
   GameWon wp -> if wp == circle
-               then putStrLn "You Won"
-               else putStrLn "I Won"
+                then putStrLn "You Won"
+                else putStrLn "I Won"
   _          -> print "game interrupted"

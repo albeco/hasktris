@@ -1,5 +1,5 @@
 # hasktris
-Hasktris is a text-base TicTacToe game.
+Hasktris is a text-based TicTacToe game.
 To start a game use the function 'startGame' with the
 choosen algorithm (e.g. "startGame alphabeta").
 There are two implemented algorithms: 'negamax', which does

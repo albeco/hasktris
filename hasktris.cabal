@@ -1,17 +1,25 @@
 name:                hasktris
 version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/hasktris#readme
+homepage:            https://github.com/albeco/hasktris
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
-category:            Web
+author:              Alberto Comin
+maintainer:          albeko@gmail.com
+copyright:           2017 Alberto Comin
+category:            console game
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
+synopsis:            Tic-Tac-Toe game
+description:
+  Hasktris is a text-based TicTacToe game.
+  To start a game use the function 'startGame' with the choosen
+  algorithm (e.g. "startGame alphabeta").
+  There are two implemented algorithms: 'negamax', which does not
+  do any pruning, and 'alphabeta', which does alpha-beta pruning.
+  Of course pruning is not needed for such as simple game, the
+  purpose of the application is to test possible implementations
+  of the negamax algorithm in Haskell.  
 
 library
   hs-source-dirs:      src
@@ -40,4 +48,4 @@ test-suite hasktris-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/hasktris
+  location: https://github.com/albeco/hasktris
